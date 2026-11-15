@@ -39,7 +39,7 @@ public final class GuiActionResolver {
         return Optional.ofNullable(ACTIONS.get(ButtonKey.of(itemStack)));
     }
 
-    private static final Pattern HOTBAR_BUTTON = Pattern.compile("^press\\s+([1-9])\\s*!$");
+    private static final Pattern HOTBAR_BUTTON = Pattern.compile("^Press\\s+([1-9])\\s*!$");
 
     public static OptionalInt resolveHotbarSlot(ItemStack itemStack) {
         if (itemStack.isEmpty()) return OptionalInt.empty();
