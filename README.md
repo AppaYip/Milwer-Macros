@@ -1,9 +1,9 @@
 # Milwer Macros
 
-## Setup
+A minecraft mod with macros for the Milwer minecraft server
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+Please note that this isn't intended to be used maliciously and was a passion project.
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This template is available under the MIT license.
