@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "milwer-macros",
+	"version": "${version}",
+	"name": "Milwer Macros",
+	"description": "A minecraft mod with quality of life macros for Milwer",
+	"authors": [
+		"Appa"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": ""
+	},
+	"license": "MIT-License",
+	"icon": "assets/milwer-macros/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.appayip.MilwerMacros"
+		],
+		"client": [
+			"io.github.appayip.client.MilwerMacrosClient"
+		],
+		"fabric-datagen": [
+			"io.github.appayip.client.MilwerMacrosDataGenerator"
+		]
+	},
+	"mixins": [
+		"milwer-macros.mixins.json",
+		{
+			"config": "milwer-macros.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
