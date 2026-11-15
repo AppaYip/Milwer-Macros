@@ -57,7 +57,7 @@ public final class GuiSolver {
             GuiActionExecutor.execute(client, chest, slot, action.get());
             break; // Only one action per execute call.
         }
-    }//
+    }
 
     /**
      * Identifies the type of Milwer GUI.
