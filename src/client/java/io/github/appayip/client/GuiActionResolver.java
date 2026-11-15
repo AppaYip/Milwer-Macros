@@ -4,6 +4,7 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.ColorCollection;
 
 import java.util.Map;
 import java.util.Optional;
@@ -26,11 +27,13 @@ public final class GuiActionResolver {
         }
     }
 
+    private static final ColorCollection<Item> STAINED_GLASS_PANE = Items.STAINED_GLASS_PANE;
+
     private static final Map<ButtonKey, GuiAction> ACTIONS = Map.of(
-            new ButtonKey(Items.STAINED_GLASS_PANE.pick(DyeColor.LIGHT_BLUE), "Left Click!"), GuiAction.LEFT_CLICK,
-            new ButtonKey(Items.STAINED_GLASS_PANE.pick(DyeColor.LIME), "Right Click!"), GuiAction.RIGHT_CLICK,
-            new ButtonKey(Items.STAINED_GLASS_PANE.pick(DyeColor.YELLOW), "Drop Item!"), GuiAction.DROP,
-            new ButtonKey(Items.STAINED_GLASS_PANE.pick(DyeColor.MAGENTA), "Swap Hands!"), GuiAction.SWAP_OFFHAND
+            new ButtonKey(STAINED_GLASS_PANE.lightBlue(), "Left Click!"), GuiAction.LEFT_CLICK,
+            new ButtonKey(STAINED_GLASS_PANE.lime(), "Right Click!"), GuiAction.RIGHT_CLICK,
+            new ButtonKey(STAINED_GLASS_PANE.yellow(), "Drop Item!"), GuiAction.DROP,
+            new ButtonKey(STAINED_GLASS_PANE.magenta(), "Swap Hands!"), GuiAction.SWAP_OFFHAND
     );
 
     public static Optional<GuiAction> resolve(ItemStack itemStack) {
