@@ -1,4 +1,4 @@
-package io.github.appayip.client;
+package io.github.appayip.client.gui;
 
 public enum GuiType {
     CRAFTER,

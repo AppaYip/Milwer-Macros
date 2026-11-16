@@ -1,4 +1,4 @@
-package io.github.appayip.client;
+package io.github.appayip.client.gui;
 
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.ContainerInput;

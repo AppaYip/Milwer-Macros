@@ -1,4 +1,4 @@
-package io.github.appayip.client;
+package io.github.appayip.client.gui;
 
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;

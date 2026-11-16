@@ -1,4 +1,4 @@
-package io.github.appayip.client;
+package io.github.appayip.client.gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.inventory.AbstractContainerMenu;
