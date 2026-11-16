@@ -14,9 +14,15 @@ public class ModKeyMappings {
                     InputConstants.Type.KEYBOARD,
                     InputConstants.KEY_R,
                     KeyMapping.Category.MISC
-            )
-    );
+    ));
 
+    public static final KeyMapping CHARACTER_MACRO = KeyMappingHelper.registerKeyMapping(
+            new KeyMapping(
+                    "key." + ID + ".character_macro",
+                    InputConstants.Type.KEYBOARD,
+                    InputConstants.KEY_R,
+                    KeyMapping.Category.MISC
+    ));
 
 
     public static void register() {
