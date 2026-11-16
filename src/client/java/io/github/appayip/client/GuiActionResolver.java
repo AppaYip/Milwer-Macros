@@ -31,7 +31,9 @@ public final class GuiActionResolver {
 
     private static final Map<ButtonKey, GuiAction> ACTIONS = Map.of(
             new ButtonKey(STAINED_GLASS_PANE.lightBlue(), "Left Click!"), GuiAction.LEFT_CLICK,
+            new ButtonKey(STAINED_GLASS_PANE.cyan(), "Shift + Left Click!"), GuiAction.SHIFT_LEFT_CLICK,
             new ButtonKey(STAINED_GLASS_PANE.lime(), "Right Click!"), GuiAction.RIGHT_CLICK,
+            new ButtonKey(STAINED_GLASS_PANE.green(), "Shift + Right Click!"), GuiAction.SHIFT_RIGHT_CLICK,
             new ButtonKey(STAINED_GLASS_PANE.yellow(), "Drop Item!"), GuiAction.DROP,
             new ButtonKey(STAINED_GLASS_PANE.magenta(), "Swap Hands!"), GuiAction.SWAP_OFFHAND
     );

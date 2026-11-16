@@ -35,6 +35,7 @@ public final class GuiSolver {
             Integer slot = entry.getKey();
             ItemStack stack = entry.getValue();
 
+
             //Check for specific hotbar swap item.
             OptionalInt hotbarSlot = GuiActionResolver.resolveHotbarSlot(stack);
             if (hotbarSlot.isPresent()) {
@@ -47,6 +48,7 @@ public final class GuiSolver {
 
                 return;
             }
+
 
             // Regular Actions
             Optional<GuiAction> action = GuiActionResolver.resolve(stack);
